@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Fjzn31s3KzZY6PxV-",
+      });
+   })();
+</script>
+</head>
+<body>
+
+  <audio autoplay loop> 
+    <source src="lofi-ambient-music-356059.mp3">
+   </audio>
+  <!-- Nav Bar -->
+  <nav>
+    <ul class="sidebar">
+      <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+      <li><a href="#skills-section"><i class="fas fa-tv"></i>Skills</a></li>
+      <li><a href="#testimonies"><i class="fas fa-comment"></i>Testimony</a></li>
+      <li><a href="#project-section"><i class="fas fa-folder"></i>Projects</a></li>
+      <li><a href="#contact"><i class="fas fa-user"></i>Contact</a></li>
+    </ul>
+    
+     
+    <ul class="navbar">
+      <li><a href="#" id="title" onclick="removeSidebar()" style="color: white; font-size: 20px;">FAGO</a></li>
+      <li class="hideOnMobile"><a href="#skills-section" style="color: white; font-size: 20px;">Skills</a></li>
+      <li class="hideOnMobile"><a href="#testimonies" style="color: white; font-size: 20px;">Testimony</a></li>
+      <li class="hideOnMobile"><a href="#project-section" style="color: white; font-size: 20px;">Projects</a></li>
+      <li class="hideOnMobile"><a href="#contact" style="color: white; font-size: 20px;">Contact</a></li>
+      <li class="menu-button" onclick="showSidebar()"><a href="#"><i style="color: white; font-size: 20px;" class="fa-solid fa-bars"></i></a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function showSidebar(){
+    const sidebar = document.querySelector(".sidebar")
+    sidebar.style.display = "flex"
+    }
+
+    function hideSidebar(){
+    const sidebar = document.querySelector(".sidebar")
+    sidebar.style.display = "none"
+    }
+  </script>
+
+
+   <main>
+   <!-- Section 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+       <h2>Hi, I'm George🧐👋 </h2>
+       <p>Hello my name is Farouq George,I am a novice website developer but i still possess the skills to create a moderate web page</p>
+
+      <div class="links">
+        <a href="#skills-section">
+          <i class="fa-solid fa-code"></i>
+          <span>Skills</span>
+
+          <a href="#testimonies">
+            <i class="fa-solid fa-pen"></i>
+            <span>Testimony</span>
+
+            <a href="#project-section">
+              <i class="fa-solid fa-book"></i>
+              <span>Projects</span>
+
+
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+
+            
+        </a>
+      </div>
+
+      </div>
+
+     <div class="headshot">
+     <img class="img" src="Premium Vector _ Business characters working in office.jpg" alt="FAGO">
+     </div>
+      
+    </section>
+
+
+    <!-- section 2: Skills-->
+    <section id="skills-section">
+      <h2  style="display: flex; align-items: center; justify-content: center; color: white;" >Skills</h2>
+      <div class="text">
+       Over my time of coding  ive been able to gain a decent mastery of html,css and MYSQL but i shall still strive to learn more to add more weight to my skills and some improvements to my works so i can become a valuable asset.
+      </div>
+
+      <div class="cells">
+        <div class="cell">
+          <img  src="css-logo.webp" alt="html logo">
+          <span style="color: white;">HTML</span>
+        </div>
+
+        <div class="cell">
+          <img  src="html-logo.webp" alt="css logo">
+          <span style="color: white;">CSS</span>
+      </div>
+
+      <div class="cell">
+        <img  src="mysql.svg" alt="sql logo">
+        <span style="color: white;">MYSQL</span>
+    </div>
+    </section>
+
+    <!-- section 3 :Testimony -->
+    <section id="testimonies" class="testimony-section">
+      <h2 style="display: flex; align-items: center; justify-content: center; color: white;">Testimony</h2>
+
+      <div class="group">
+        <div class="person-details">
+          <img src="testimony-headshot.webp" alt="FAGO jr">
+          <p style="color: white;">JJ Williams</p>
+        </div>
+
+        <div class="text">
+          As he is now he is able to create a nice looking webpage.
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: PROJECTS -->
+     <section id="project-section">
+      <h2 style="display: flex; align-items: center; justify-content: center; color: white;">Projects</h2>
+
+      <div class="group">
+     <div class="text">
+      Welcome to my project section.In this section i shall  be displaying some of the projects ive worked on with some being accomplished through my efforts and others with aid
+     </div>
+
+     <div class="project-list">
+      <a href="http://127.0.0.1:5501/index.html" target="_blank" rel="noopener noreferrer" class="project-card">
+        <img class="img1" src="Screenshot 2025-06-04 142701.png" alt="Project One" />
+        <div class="project-content">
+          <h3 class="project-title">Coffee Webpage</h3>
+          <p class="project-description">This project displays a simple coffee webpage
+          </p>
+        </div>
+      </a>
+      <a href="" target="_blank" rel="noopener noreferrer" class="project-card">
+        <img class="img" src="Sunset.jpg" alt="Project Two" />
+        <div class="project-content">
+          <h3 class="project-title">Multi-Webpage Website</h3>
+          <p class="project-description">A simple website with multiple webpages</p>
+        </div>
+      </a>
+        </div>
+      </a>
+    </div>
+
+<!-- 
+     <div class="slider-wrapper">
+      <div class="slider"> 
+        <img id="slide-1" src="Premium Vector _ Business characters working in office.jpg" alt="Coffee">
+        <img id="slide-2" src="Sunset.jpg" alt="Test">
+        <a href=""></a>
+      </div> 
+      <div class="slider-nav">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+      </div>
+      <a href="http://127.0.0.1:5501/index.html">COF</a>
+     </div> -->
+ 
+     </section>
+
+
+    <!-- section 5: Contact-->
+     <section id="contact" class="contact-section">
+      <h2 style="display: flex; align-items: center; justify-content: center;">Contact</h2>
+      
+      <div class="group">
+        <div class="text">
+        Hello, thank you taking your time to go through my portfolio, its not perfect but some adjustments shall be made to it but if  have taken interest in my skills then you can contact me with the form provided or directly contact on my whatsapp or gmail
+        
+        <p>whatsapp:+23409060172663</p>
+        <p>Georgefarouq05@gmail.com</p>
+        </div>
+
+        <form id="contact-form" onsubmit="handleFormSubmit(event)">
+          <label for="name" style="color: white;">Name</label>
+          <input  type="text"  id="name" name="name">
+
+          <label for="email" style="color: white"; >Email</label>
+          <input type="text" id="email" name="email">
+          
+          <label for="message" style="color: white; ">Message</label>
+          <textarea style="background-color: white;" id="message" name="message"></textarea>
+
+          <button  id="submit" type="submit" >Send Message</button>
+        </form>
+      </div>
+     </section>
+   </main>
+
+   <script src="script.js"></script>
+</body>
+</html>
