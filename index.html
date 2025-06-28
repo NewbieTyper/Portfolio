@@ -23,8 +23,10 @@
 </head>
 <body>
 
-  <audio autoplay loop> 
-    <source src="lofi-ambient-music-356059.mp3">
+  <audio  autoplay loop> 
+    <source src="lofi-ambient-music-356059.mp3" type="audio/mpeg">
+    <source src="lofi-ambient-music-356059 (online-audio-converter.com).ogg" type="audio/ogg">
+    Your browser does not support the audio element
    </audio>
   <!-- Nav Bar -->
   <nav>
@@ -64,35 +66,40 @@
    <!-- Section 1: Hero -->
     <section class="hero-section">
       <div class="text">
-       <h2>Hi, I'm George🧐👋 </h2>
+       <h2>Hi, I'm George <span>🧐👋</span> </h2>
        <p>Hello my name is Farouq George,I am a novice website developer but i still possess the skills to create a moderate web page</p>
 
       <div class="links">
         <a href="#skills-section">
           <i class="fa-solid fa-code"></i>
           <span>Skills</span>
+          </a>
 
           <a href="#testimonies">
             <i class="fa-solid fa-pen"></i>
             <span>Testimony</span>
+          </a>
 
             <a href="#project-section">
               <i class="fa-solid fa-book"></i>
               <span>Projects</span>
+              </a>
 
 
-          <a href="#contact">
+          <a class="contact" href="#contact">
             <i class="fa-solid fa-envelope"></i>
             <span>Contact</span>
-
-            
         </a>
       </div>
-
+      <a class="btn" href="#contact">
+        <button class="start-btn" style="height: 50px; width: 350px;">Lets Get Started ></button>
+      
+      </a>
+      
       </div>
 
      <div class="headshot">
-     <img class="img" src="Premium Vector _ Business characters working in office.jpg" alt="FAGO">
+     <img class="img" style="height: 400px;" src="Premium Vector _ Business characters working in office.jpg" alt="FAGO">
      </div>
       
     </section>
@@ -133,14 +140,14 @@
         </div>
 
         <div class="text">
-          As he is now he is able to create a nice looking webpage.
+          *TO BE FILLED*
         </div>
       </div>
     </section>
 
     <!-- SECTION 4: PROJECTS -->
      <section id="project-section">
-      <h2 style="display: flex; align-items: center; justify-content: center; color: white;">Projects</h2>
+      <h2 style="display: flex; align-items: center; justify-content: center; color: white;font-size: 35px;">Projects</h2>
 
       <div class="group">
      <div class="text">
@@ -186,25 +193,26 @@
 
     <!-- section 5: Contact-->
      <section id="contact" class="contact-section">
-      <h2 style="display: flex; align-items: center; justify-content: center;">Contact</h2>
+      <h2 style="display: flex; align-items: center; justify-content: center; color: white;">Contact</h2>
       
       <div class="group">
         <div class="text">
-        Hello, thank you taking your time to go through my portfolio, its not perfect but some adjustments shall be made to it but if  have taken interest in my skills then you can contact me with the form provided or directly contact on my whatsapp or gmail
+        <h1 style="font-weight: normal;">Hello, thank you taking your time to go through my portfolio, its not perfect but some adjustments shall be made to it but if  have taken interest in my skills then you can contact me with the form provided or directly contact on my whatsapp or gmail</h1>
         
-        <p>whatsapp:+23409060172663</p>
-        <p>Georgefarouq05@gmail.com</p>
+        <p> <i class="fa-brands fa-whatsapp"></i>whatsapp:+23409060172663</p>
+        <p> <i class="fa-solid fa-envelope"></i>Georgefarouq05@gmail.com</p>
+        
         </div>
 
-        <form id="contact-form" onsubmit="handleFormSubmit(event)">
+        <form id="contact-form" onsubmit="handleFormSubmit(event)" action="https://formsubmit.co/Georgefarouq05@gmail.com" method="POST">
           <label for="name" style="color: white;">Name</label>
-          <input  type="text"  id="name" name="name">
+          <input  type="text"  id="name" name="name" placeholder="name" required>
 
           <label for="email" style="color: white"; >Email</label>
-          <input type="text" id="email" name="email">
+          <input type="text" id="email" name="email" placeholder="email" required>
           
           <label for="message" style="color: white; ">Message</label>
-          <textarea style="background-color: white;" id="message" name="message"></textarea>
+          <textarea style="background-color: white;" id="message" name="message" required></textarea>
 
           <button  id="submit" type="submit" >Send Message</button>
         </form>
