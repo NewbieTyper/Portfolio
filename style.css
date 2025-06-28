@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 
 html {
@@ -121,19 +122,61 @@ nav ul li  a:hover{
   padding: 0 50px;
   margin: 50px;
   gap: 40px;
-  margin-bottom: 100px;
+  margin-top: 200px;
+}
+
+.hero-section .text .start-btn{
+  background-color: rgb(4, 4, 150);
+  border: none;
+  height: 40px;
+  width: 200px;
+  margin-top: 20px;
+  color: yellow;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.hero-section .text .start-btn:hover{
+background-color: rgb(34, 32, 32);
 }
 
 .hero-section .text{
   flex: 5;
 }
 
+.hero-section .text p{
+font-size: 30px;
+}
+
 .hero-section .text h2{
-  font-size: 45px;
+  font-size: 200px;
+  background: linear-gradient(90deg, #ff0000, #ff8c80,#40c0d0,#8a2be2,#ff0090);
+  color: transparent;
+  background-size: 500% 500%;
+  background-clip: text;
+  animation: gradient-animation 6s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+.hero-section .text h2 span{
+  color: yellow;
 }
 
 .hero-section .text .links{
   margin-top: 25px;
+  font-size: 30px;
 }
 
 .hero-section .links a{
@@ -158,32 +201,36 @@ nav ul li  a:hover{
 }
 
 .hero-section .headshot img{
-  width: 250px;
+  width: 400px;
   border-radius: 270px;
+  margin-top: 50px;
 }
 
 
 
 /* SECTION 2:SKILLS */
 #skills-section{
+  scroll-margin-top: 100px;
   padding: 0 50px;
-  margin-bottom: 100px;
+  margin-top: 380px;
 }
 
 #skills-section h2{
   text-align: center;
-  font-size: 35px;
+  font-size: 50px;
 }
 
 #skills-section .text{
   text-align: center;
   margin-bottom: 20px;
+  font-size: 30px;
 }
 
 #skills-section .cells{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  height: 50px;
 }
 
 #skills-section .cells .cell{
@@ -213,7 +260,9 @@ nav ul li  a:hover{
 
 /* section 3: testimony */
 .testimony-section{
+  scroll-margin-top: 100px;
   padding: 0 50px;
+  margin-top: 560px;
   margin-bottom: 100px;
 }
 
@@ -235,6 +284,8 @@ nav ul li  a:hover{
 
 .testimony-section .group .text{
   flex: 8;
+  font-size: 30px;
+  
 }
 
 .testimony-section .group .person-details img{
@@ -247,6 +298,7 @@ nav ul li  a:hover{
 
 .testimony-section .group .person-details p{
   font-weight:600;
+  font-size: 30px;
 }
 
 .testimony-section .group .person-details p:last-child{
@@ -254,13 +306,33 @@ nav ul li  a:hover{
 }
 
 @media (max-width:740px) {
+
  /* SECTION 1:HERO */
   .hero-section{
     flex-direction: column-reverse;
   }
 
   .hero-section .headshot img{
-    width: 300px;
+    width: 380px;
+  }
+
+  .hero-section .text p{
+    text-align: center;
+    width: 400px;
+    margin-left: 15px;
+  }
+
+  .hero-section .text .links{
+  gap: 20px;
+  }
+
+  .hero-section .text .links .contact{
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+
+  .hero-section .text  .btn{
+    margin-left: 40px;
   }
 
   /* SECTION 3: TESTIMONY */
@@ -272,6 +344,7 @@ nav ul li  a:hover{
   .contact-section .group{
     flex-direction: column;
   }
+
 }
 
 .testimony-section .group{
@@ -280,12 +353,13 @@ nav ul li  a:hover{
 
 /* SECTION 4 : CONTACT */
 .contact-section{
+  scroll-margin-top: 100px;
   padding: 0 50px;
-  margin-bottom: 100px;
+  margin-top: 390px;
 }
 
 .contact-section h2{
-  font-size: 35px;
+  font-size: 5px;
 }
 
 .contact-section .group{
@@ -302,6 +376,7 @@ nav ul li  a:hover{
   flex: 3;
   display: flex;
   flex-direction: column;
+ 
 }
 
 .contact-section .group form,
@@ -330,6 +405,26 @@ nav ul li  a:hover{
   filter: brightness(.9);
 }
 
+.contact-section .group .text p i{
+  margin-right: 5px;
+}
+
+#contact-form{
+  background: linear-gradient(to right, blue,black);
+  margin-top: 25px;
+}
+
+.contact-section .group form input{
+  height: 30px;
+ box-sizing: border-box;
+ padding: 10px;
+  border: none;
+}
+
+.contact-section form input::placeholder{
+  font-size: 14px;
+}
+
 @media (max-width:600px) {
   /* NAVBAR */
   /* nav{
@@ -352,6 +447,10 @@ nav .right a:last-child{
   .hideOnMobile{
     display: none;
   }
+
+  nav{
+    
+  }
 }
 
 .menu-button{
@@ -370,12 +469,14 @@ nav .right a:last-child{
 
 
 @media (max-width: 400px){
+
+  
   .sidebar{
     width: 100%;
   }
 
   nav .sidebar i{
-    margin-bottom: 20px;
+    margin-bottom: 1px;
   }
 
   .hero-section .text h2{
@@ -390,6 +491,22 @@ nav .right a:last-child{
   .hero-section .links{
     margin-left: 30px;
   }
+
+  #project-section .group .text{
+   
+  }
+
+.contact-section h2{
+  font-size: 40px;
+  }
+
+  .contact-section h1{
+    text-align: center;
+    }
+
+    .contact-section p{
+      text-align: center;
+      }
 }
 
 
@@ -496,11 +613,11 @@ font-size: 30px;
 
 
 
-.projects-section {
-  max-width: 900px;
-  margin: auto;
+#project-section {
+  scroll-margin-top: 100px;
+  margin-top: 360px;
 }
-.projects-section h2 {
+#project-section h2 {
   text-align: center;
   margin-bottom: 20px;
 }
@@ -539,6 +656,9 @@ font-size: 30px;
 #project-section .group .text{
   text-align: center;
   margin-bottom: 10px;
+  width: 1200px;
+  margin-left: 150px;
+  font-size: 22px;
 }
 
 .img{
