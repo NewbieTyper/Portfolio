@@ -453,6 +453,12 @@ nav .right a:last-child{
     display: none;
   }
 
+  .hero-section .text .links{
+    display: flex;
+    margin-left: 20px;
+    gap: 5px;
+    padding: 0px;
+   }
 
 }
 
@@ -480,12 +486,24 @@ nav .right a:last-child{
   .sidebar.open {
     display: flex;
   }
+
+  .hero-section .text .links{
+    display: flex;
+    margin-left: 20px;
+    gap: 5px;
+    padding: 0px;
+   }
 }
 
 
 @media (max-width: 400px){
 
-
+  .hero-section .text .links{
+    display: flex;
+    margin-left: 20px;
+    gap: 5px;
+    padding: 0px;
+   }
 
   .hideOnMobile{
     display: none;
@@ -554,6 +572,13 @@ nav .right a:last-child{
     border-radius: 100%;
     margin-top: 40px;
   }
+
+  .hero-section .text .links{
+    display: flex;
+    margin-left: 20px;
+    gap: 5px;
+    padding: 0px;
+   }
 }
 
 
@@ -703,4 +728,3 @@ font-size: 30px;
 .headshot .img{
   margin-top: 20px;
 }
-
