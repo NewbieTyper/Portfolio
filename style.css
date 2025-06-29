@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
 }
 
 html {
@@ -61,7 +60,7 @@ nav ul{
 }
 
 nav li{
-  height: 35px;
+  height: auto;
 }
 
 nav ul li  a{
@@ -94,7 +93,7 @@ nav ul li  a:hover{
   top: 0;
   right:0;
   height: 100vh;
-  width: 250px;
+  width: 100%;
   z-index: 999;
   background-color: rgba(36, 80, 240, 0.726);
   backdrop-filter: blur(10px);
@@ -175,8 +174,11 @@ font-size: 30px;
 }
 
 .hero-section .text .links{
-  margin-top: 25px;
-  font-size: 30px;
+
+  margin-top: 20px;
+  font-size: 15px;
+
+  
 }
 
 .hero-section .links a{
@@ -318,12 +320,15 @@ font-size: 30px;
 
   .hero-section .text p{
     text-align: center;
-    width: 400px;
-    margin-left: 15px;
+    width: 100%;
+    margin-left: 0;
   }
 
   .hero-section .text .links{
-  gap: 20px;
+   display: flex;
+   margin-left: 20px;
+   gap: 5px;
+   padding: 0px;
   }
 
   .hero-section .text .links .contact{
@@ -359,7 +364,7 @@ font-size: 30px;
 }
 
 .contact-section h2{
-  font-size: 5px;
+  font-size: 30px;
 }
 
 .contact-section .group{
@@ -448,9 +453,7 @@ nav .right a:last-child{
     display: none;
   }
 
-  nav{
-    
-  }
+
 }
 
 .menu-button{
@@ -465,15 +468,46 @@ nav .right a:last-child{
   .menu-button{
     display: block;
   }
+
+  .navbar li .hideOnMobile{
+    display: none;
+   }
+
+   .sidebar {
+    width: 100%;
+    display: none;
+  }
+  .sidebar.open {
+    display: flex;
+  }
 }
 
 
 @media (max-width: 400px){
 
-  
-  .sidebar{
-    width: 100%;
+
+
+  .hideOnMobile{
+    display: none;
   }
+
+  .menu-button{
+    display: block;
+  }
+
+  .navbar li .hideOnMobile{
+    display: none;
+   }
+
+   .sidebar {
+    width: 100%;
+    display: none;
+
+  }
+  .sidebar.open {
+    display: flex;
+  }
+  
 
   nav .sidebar i{
     margin-bottom: 1px;
@@ -489,12 +523,9 @@ nav .right a:last-child{
   }
 
   .hero-section .links{
-    margin-left: 30px;
+   width: 400px;
   }
 
-  #project-section .group .text{
-   
-  }
 
 .contact-section h2{
   font-size: 40px;
@@ -656,8 +687,8 @@ font-size: 30px;
 #project-section .group .text{
   text-align: center;
   margin-bottom: 10px;
-  width: 1200px;
-  margin-left: 150px;
+  width: 100%;
+  margin-left: 0px;
   font-size: 22px;
 }
 
@@ -672,3 +703,4 @@ font-size: 30px;
 .headshot .img{
   margin-top: 20px;
 }
+
