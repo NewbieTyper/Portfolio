@@ -324,6 +324,10 @@ font-size: 30px;
     margin-left: 0;
   }
 
+  .hero-section .text h2{
+    text-align: center;
+  }
+
   .hero-section .text .links{
    display: flex;
    margin-left: 20px;
@@ -453,6 +457,11 @@ nav .right a:last-child{
     display: none;
   }
 
+  .hero-section .text h2{
+    text-align: center;
+  }
+
+
   .hero-section .text .links{
     display: flex;
     margin-left: 20px;
@@ -470,6 +479,11 @@ nav .right a:last-child{
   .hideOnMobile{
     display: none;
   }
+
+  .hero-section .text h2{
+    text-align: center;
+  }
+
 
   .menu-button{
     display: block;
@@ -504,6 +518,11 @@ nav .right a:last-child{
     gap: 5px;
     padding: 0px;
    }
+
+   .hero-section .text h2{
+    text-align: center;
+  }
+
 
   .hideOnMobile{
     display: none;
@@ -563,6 +582,11 @@ nav .right a:last-child{
   .links{
     width: 400px;
   }
+
+  .hero-section .text h2{
+    text-align: center;
+  }
+
 
   #project-section .group .text{
    text-align: center;
