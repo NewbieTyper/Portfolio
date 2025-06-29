@@ -20,9 +20,9 @@ function handleFormSubmit(e) {
   clearForm(); 
 }
 
-// const sidebar = document.querySelector('.sidebar');
-// const menuButton = document.querySelector('menu-button');
+const sidebar = document.querySelector('.sidebar');
+const menuButton = document.querySelector('menu-button');
 
-// menuButton.addEventListener('click', () => {
-//   sidebar.classList.toggle('active')
-// });
+menuButton.addEventListener('click', () => {
+  sidebar.classList.toggle('active')
+});
